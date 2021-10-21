@@ -8,8 +8,8 @@ In private subnets I have created EKS cluster where all the applications can be 
 
 
 The architectural Diagram is as show in the picture below:
+![3-tier](https://user-images.githubusercontent.com/41645323/138348587-8f47365a-ece6-44fd-8ec9-e96412add4f4.jpg)
 
-<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="2" value="&lt;font style=&quot;font-size: 24px&quot;&gt;Private Subnet-2&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1"><mxGeometry x="700" y="400" width="230" height="70" as="geometry"/></mxCell></root></mxGraphModel>
 
 ## Deployment Guide:
 
