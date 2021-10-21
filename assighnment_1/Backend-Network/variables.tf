@@ -42,7 +42,7 @@ variable "db-subnet-cidr" {
 }
 
 variable "nat-gateway" {
-  default     = "false"
+  default     = "true"
   type        = string
   description = "Enable/Disable NAT Gateway creation"
 } 
