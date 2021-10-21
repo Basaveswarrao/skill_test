@@ -1,0 +1,16 @@
+---
+- name: ping the instances and get the metadata of it.
+  hosts: all
+  vars:
+    ansible_ssh_private_key_file: "/home/vagrant/ansible/test-ansible.pem" #provide SSH key here
+    ansible_user: ec2-user
+    ansible_become: yes
+    ansible_become_method: sudo
+  tasks:
+    - name: pinging
+      ping:
+    - name: Get meta data of each ec2
+      ansible.builtin.shell: curl --silent http://169.254.169.254/latest/dynamic/instance-identity/document
+      register: meta
+
+    - debug: msg="{{ meta.stdout }}"
